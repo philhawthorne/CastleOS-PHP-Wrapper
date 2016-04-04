@@ -63,10 +63,10 @@ class CastleOS
         }
     
         $api_url = "http://{$this->host}/CastleOS/service/web/{$url}";
-        /*if (!$this->hasToken())
+        if (!$this->hasToken())
             $this->getToken();
         if (!$this->hasToken())
-            return array();*/
+            return array();
         
         $headers = array("X-CastleOS-Authorization: {$this->generateAuthorization()}");
         $ch = curl_init();
@@ -205,7 +205,7 @@ class CastleOS
     {
         $username = urlencode($this->username);
         $password = urlencode($this->password);
-        $api_url = "http://{$this->host}/CastleOS/service/web/AuthenticateUser_PlainText?username={$username}&password={$password}";
+        $api_url = "http://{$this->host}/CastleOS/service2/web/AuthenticateUser_PlainText?username={$username}&password={$password}";
         
         $ch = curl_init();
         $headers = array('Accept: application/json');
