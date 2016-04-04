@@ -91,7 +91,7 @@ Some devices such as Hue bulbs or Zwave dimmer switches allow you to control the
 ```
 
 ### Changing Colours
-Colours can be set by specifying either a HSL value, or Kelvin Temperature.
+Colours can be set by specifying either a HSB value, or Kelvin Temperature.
 
 ```php
     <?php
